@@ -43,9 +43,12 @@
 							<ul class="nav nav-list usermenu">
 								<li class="active"><a href="#about"><i class="icon-info-sign"></i>About</a></li>
 								<li class="divider"></li>
+
 								<li class="nav-header">Thesis</li>
 								<li><a href="#wordcloud"><i class="icon-picture"></i>Word cloud</a></li>
 								<li><a href="#abstract"><i class="icon-bullhorn"></i>Abstract</a></li>
+                <li class="divider"></li>
+
 								<li class="nav-header">Thesis results</li>
 								<li><a href="#pubs"><i class="icon-th-list"></i>Publications</a></li>
 									<ul class="nav nav-list usermenu">
@@ -53,7 +56,7 @@
   									<li><a href="#chapters"><i class= "icon-th"></i>Book chapters</a></li>
   									<li><a href="#others"><i class= "icon-th"></i>Other publications</a></li>
   								</ul>
-								<li><a href="#datasets"><i class="icon-folder-open"></i>Datasets</a></li>
+								<li><a href="#datasets"><i class="icon-folder-open"></i>Data sets</a></li>
 								<li><a href="#software"><i class="icon-th-large"></i>Software</a></li>
 								<li><a href="#demos"><i class="icon-star"></i>Demonstrations</a></li>
 							</ul>
@@ -80,7 +83,7 @@
 	  			
 	  			<p>
 	  			This web site is about PhD thesis by Andrey Ziyatdinov
-	  			entitled as <i>Biomimetic set up for chemosensor-based machine olfaction</i>.
+	  			<i>Biomimetic set up for chemosensor-based machine olfaction</i>.
 	  			Here both formal material and media outputs related to the thesis are presented.
 	  			</p>
 				
@@ -198,21 +201,71 @@
 
         </section>
 
+        <section id="datasets">
+  				<div class="page-header">
+            <h2>Data sets</h2>
+          </div> 
 
+          	<table class="table table-hover">
+						<thead>
+							<tr><th>Data set</th><th>Date</th><th>N sensors</th><th>N samples</th><th>N classes</th><th>Repository</th></tr>
+						</thead>
+						<tbody>
+							<tr><td>Synthetic benchmarks</td><td>28 March, 2011</td>
+							  <td>1020 virtual</td><td>120 (&#215;3 scenario &#215;5 diff.)</td><td>2</td>
+							  <td><a href="http://neurochem.sisbio.recerca.upc.edu/?page_id=257">
+							  UPC Neurochem web site</a></td></tr>
+  							<tr><td>Laboratory data set</td><td>17-20 May, 2011</td>
+							  <td>16 MOX</td><td>58</td><td>12</td>
+							  <td><a href="https://archive.ics.uci.edu/ml/datasets/Gas+sensor+array+under+flow+modulation">
+							  UCI Machine Learning Repository</a></td></tr>
+  							<tr><td>Navigation data set</td><td>11-13 July, 2011</td>
+							  <td>16 MOX, 4096 CP, IMS</td><td>up to 15</td><td>up to 8</td>
+							  <td>Unpublished</td></tr>
+							  <!--        
+							  <td></td>
+							  -->
+						</tbody>
+						</table>
 
+        </section>
+
+        <section id="software">
+  				<div class="page-header">
+            <h2>Software</h2>
+          </div> 
+
+          	<table class="table table-hover">
+						<thead>
+							<tr><th>Software program</th><th>Web page</th><th>Code repository</th><th>Official Repository</th></tr>
+						</thead>
+						<tbody>
+							<tr><td>OS Neurochem Image</td>
+							  <td><a href="http://neurochem.sisbio.recerca.upc.edu/?page_id=54">
+							  UPC Neurochem web site</a></td><td></td><td></td></tr>
+							<tr><td>R package cpca</td>
+							  <td></td>
+							  <td><a href="https://github.com/variani/cpca">Github</a></td>
+							  <td><a href="http://cran.r-project.org/web/packages/cpca/">CRAN</a></td>
+  					  </tr>
+							<tr><td>R package chemosensors</td>
+							  <td><a href="http://chemosensors.r-forge.r-project.org/">R-Forge web site</a></td>
+							  <td><a href="https://r-forge.r-project.org/scm/viewvc.php/?root=chemosensors">R-Forge</a></td>
+							  <td><a href="http://cran.r-project.org/web/packages/chemosensors/">CRAN</a></td>
+  					  </tr>
+							  <!--        
+							  <td></td>
+							  -->
+						</tbody>
+						</table>
+
+        </section>
+        
 				</div>
 			</div>
 		</div>
 		<div id="emptyness"></div>
 
-		<!-- twitter modal -->
-		<div class="modal fade hide" id="twittermodal">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<a class="twitter-timeline" href="https://twitter.com/hashtag/user2014" data-widget-id="481885930052014080">#user2014 Tweets</a>
-				</div>
-			</div>
-		</div>
 	</div>
 
 	<div id="footer">
