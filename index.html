@@ -43,6 +43,7 @@
 					<div class="affixdiv" data-spy="affix" data-offset-top="400" data-clampedwidth=".sidebar">
 						<div class="well" style="padding: 8px 0;">
 							<ul class="nav nav-list usermenu">
+								<li class="nav-header">Site</li>
 								<li class="active"><a href="#about"><i class="icon-info-sign"></i>About</a></li>
 								<li class="divider"></li>
 
@@ -57,6 +58,8 @@
   									<li><a href="#articles"><i class= "icon-th"></i>Journal articles</a></li>
   									<li><a href="#chapters"><i class= "icon-th"></i>Book chapters</a></li>
   									<li><a href="#others"><i class= "icon-th"></i>Other publications</a></li>
+  									<li><a href="#collab"><i class= "icon-th"></i>Collaborations</a></li>
+  									<li><a href="#post"><i class= "icon-th"></i>Post-thesis</a></li>
   								</ul>
 								<li><a href="#datasets"><i class="icon-folder-open"></i>Data sets</a></li>
 								<li><a href="#software"><i class="icon-th-large"></i>Software</a></li>
@@ -114,12 +117,8 @@
             software of the assembled set up.
             The journal articles cover the results related 
             to the data analysis with emphasis on creating the data simulation tool. 
-            The three journal articles were published in the course of the thesis
-            and  enabled to present the thesis as a collection of published articles,
-            according to the UPC 
-            <a href="http://doctorat.upc.edu/thesis/the-doctoral-thesis/collection-of-published-articles">statement</a>.
-            
             </p>
+
             <table class="table table-hover">
 						<thead>
 							<tr><th>Publication</th><th>Thesis section</th></tr>
@@ -153,7 +152,12 @@
   				<div class="page-header">
             <h3>Journal Articles</h3>
           </div>
-          
+          <p>
+            The three journal articles were published in the course of the thesis
+            and  enabled to present the thesis as a collection of published articles,
+            according to the UPC 
+            <a href="http://doctorat.upc.edu/thesis/the-doctoral-thesis/collection-of-published-articles">statement</a>.
+          </p>          
             <ul>
               <li>
                 <b>Ziyatdinov, A.</b>, Marco, S., Chaudry, A., Persaud, K., Caminal, P., & Perera, A. (2010). 
@@ -162,8 +166,7 @@
                 [<a href="http://linkinghub.elsevier.com/retrieve/pii/S0925400509008995">link</a>]
                 
                 <p><blockquote>
-<i>Abstract</i>:
-A new drift compensation method based on common principal component analysis (CPCA) is proposed. The drift variance in data is found as the principal components computed by CPCA. This method finds components that are common for all gasses in feature space. The method is compared in classification task with respect to the other approaches published where the drift direction is estimated through a principal component analysis (PCA) of a reference gas. The proposed new method – employing no specific reference gas, but information from all gases – has shown the same performance as the traditional approach with the best-fitted reference gas. Results are shown with data lasting 7 months including three gases at different concentrations for an array of 17 polymeric sensors.
+Abstract: A new drift compensation method based on common principal component analysis (CPCA) is proposed. The drift variance in data is found as the principal components computed by CPCA. This method finds components that are common for all gasses in feature space. The method is compared in classification task with respect to the other approaches published where the drift direction is estimated through a principal component analysis (PCA) of a reference gas. The proposed new method – employing no specific reference gas, but information from all gases – has shown the same performance as the traditional approach with the best-fitted reference gas. Results are shown with data lasting 7 months including three gases at different concentrations for an array of 17 polymeric sensors.
                 </blockquote></p>
               </li>
               
@@ -174,8 +177,7 @@ A new drift compensation method based on common principal component analysis (CP
                 [<a href="http://linkinghub.elsevier.com/retrieve/pii/S0925400512010076">link</a>]
               
               <p><blockquote>
-<i>Abstract</i>:
-This manuscript introduces a software tool that allows for the design of synthetic experiments in machine olfaction. The proposed software package includes both, a virtual sensor array that reproduces the diversity and response of a polymer array and tools for data generation. The synthetic array of sensors allows for the generation of chemosensor data with a variety of characteristics: unlimited number of sensors, support of multicomponent gas mixtures and full parametric control of the noise in the system. The artificial sensor array is inspired from a reference database of seventeen polymeric sensors with concentration profiles for three analytes. The main features in the sensor data, like sensitivity, diversity, drift and sensor noise, are captured by a set of models under simplified assumptions. The generator of sensor signals can be used in applications related to test and benchmarking of signal processing methods, neuromorphic simulations in machine olfaction and educational tools. The software is implemented in R language and can be freely accessed at: <a href="http://chemosensors.r-forge.r-project.org/">http://chemosensors.r-forge.r-project.org/</a>.
+Abstract: This manuscript introduces a software tool that allows for the design of synthetic experiments in machine olfaction. The proposed software package includes both, a virtual sensor array that reproduces the diversity and response of a polymer array and tools for data generation. The synthetic array of sensors allows for the generation of chemosensor data with a variety of characteristics: unlimited number of sensors, support of multicomponent gas mixtures and full parametric control of the noise in the system. The artificial sensor array is inspired from a reference database of seventeen polymeric sensors with concentration profiles for three analytes. The main features in the sensor data, like sensitivity, diversity, drift and sensor noise, are captured by a set of models under simplified assumptions. The generator of sensor signals can be used in applications related to test and benchmarking of signal processing methods, neuromorphic simulations in machine olfaction and educational tools. The software is implemented in R language and can be freely accessed at: <a href="http://chemosensors.r-forge.r-project.org/">http://chemosensors.r-forge.r-project.org/</a>.
               </blockquote></p>
               </li>
               
@@ -186,8 +188,7 @@ This manuscript introduces a software tool that allows for the design of synthet
                 [<a href="http://dx.plos.org/10.1371/journal.pone.0088839">link</a>]
 
                 <p><blockquote>
-<i>Abstract</i>:
-In machine olfaction, the design of applications based on gas sensor arrays is highly dependent on the robustness of the signal and data processing algorithms. While the practice of testing the algorithms on public benchmarks is not common in the field, we propose software for performing data simulations in the machine olfaction field by generating parameterized sensor array data. The software is implemented as an R language package chemosensors which is open-access, platform-independent and self-contained. We introduce the concept of a virtual sensor array which can be used as a data generation tool. In this work, we describe the data simulation workflow which basically consists of scenario definition, virtual array parameterization and the generation of sensor array data. We also give examples of the processing of the simulated data as proof of concept for the parameterized sensor array data: the benchmarking of classification algorithms, the evaluation of linear- and non-linear regression algorithms, and the biologically inspired processing of sensor array data. All the results presented were obtained under version 0.7.6 of the chemosensors package whose home page is <a href="chemosensors.r-forge.r-project.org">chemosensors.r-forge.r-project.org</a>.
+Abstract: In machine olfaction, the design of applications based on gas sensor arrays is highly dependent on the robustness of the signal and data processing algorithms. While the practice of testing the algorithms on public benchmarks is not common in the field, we propose software for performing data simulations in the machine olfaction field by generating parameterized sensor array data. The software is implemented as an R language package chemosensors which is open-access, platform-independent and self-contained. We introduce the concept of a virtual sensor array which can be used as a data generation tool. In this work, we describe the data simulation workflow which basically consists of scenario definition, virtual array parameterization and the generation of sensor array data. We also give examples of the processing of the simulated data as proof of concept for the parameterized sensor array data: the benchmarking of classification algorithms, the evaluation of linear- and non-linear regression algorithms, and the biologically inspired processing of sensor array data. All the results presented were obtained under version 0.7.6 of the chemosensors package whose home page is <a href="chemosensors.r-forge.r-project.org">chemosensors.r-forge.r-project.org</a>.
                 </blockquote></p>
 
               </li>
@@ -222,8 +223,84 @@ In machine olfaction, the design of applications based on gas sensor arrays is h
   				<div class="page-header">
             <h3>Other publications</h3>
 				  </div>
-
+          
+          <ul>
+<li><b>Ziyatdinov, A.</b>, Chaudry, A., Persaud, K., Caminal, P., & Perera, A. (2009). Common principal component analysis for drift compensation of gas sensor array data. In Olfaction and electronic nose: Proceedings of the 13th International Symposium on Olfaction and Electronic Nose (Vol. 1137, pp. 566–569).</li>
+<li>Perera, A., & <b>Ziyatdinov, A.</b> (2011). A Large Scale Virtual Array of Non-selective Odour Sensors for the Neurochem Project. In Neurochem’s Workshop on Bioinspired Computation for Chemical Sensing.</li>
+<li><b>Ziyatdinov, A.</b>, Calvo, J. M. B., Lechón, M., Bermúdez i Badia, S., Verschure, P. F. M. J., Marco, S., & Perera, A. (2011). Odour Mapping Under Strong Backgrounds With a Metal Oxide Sensor Array. In AIP Conf. Proc. (Vol. 232, pp. 232–233). doi:10.1063/1.3626371</li>
+<li><b>Ziyatdinov, A.</b>, Eduard Fernández‐Diaz, Chaudry, A., Marco, S., Persaud, K., & Perera, A. (2011). A Large Scale Virtual Gas Sensor Array. In AIP Conf. Proc. 1362 (pp. 151–152). doi:http://link.aip.org/link/doi/10.1063/1.3626339</li>
+<li><b>Ziyatdinov, A.</b>, Fernández, L., Gutiérrez-Gálvez, A., Fonollosa, J., Marco, S., & Perera, A. (2013). A qualitative study of a bioinspired sensor system based on gas flow modulation by an artificial lung apparatus. In 15th International Symposium on Olfaction and electronic nose.</li>
+        </ul>
         </section>
+
+        <section id="collab">
+  				<div class="page-header">
+            <h3>Collaborations</h3>
+				  </div>
+
+          <p>
+          The drift correction method proposed in the thesis (Ziyatdinov et al., 2010)
+          was applied to data sets in Liquid Chromatography coupled to Mass Spectrometry (LC/MS).
+          The obtained results were published in the journal article.
+          </p>
+          
+          <ul>
+            <li>
+               Fernández-Albert, F., Llorach, R., Garcia-Aloy, M., <b>Ziyatdinov, A.</b>, Andrés-Lacueva, C., & Perera-Lluna, A. (2014).
+               Intensity drift removal in LC/MS metabolomics by Common Variance Compensation. <i>Bioinformatics</i>, btu423.
+               [<a href="http://bioinformatics.oxfordjournals.org/content/30/20/2899.abstract">link</a>]
+              
+              <p><blockquote>
+Abstract: Liquid chromatography coupled to mass spectrometry (LC/MS) has become widely used in Metabolomics. Several artefacts have been identified during the acquisition step in large LC/MS metabolomics experiments, including ion suppression, carryover or changes in the sensitivity and intensity. Several sources have been pointed out as responsible for these effects. In this context, the drift effects of the peak intensity is one of the most frequent and may even constitute the main source of variance in the data, resulting in misleading statistical results when the samples are analysed. In this article, we propose the introduction of a methodology based on a common variance analysis before the data normalization to address this issue. This methodology was tested and compared with four other methods by calculating the Dunn and Silhouette indices of the quality control classes. The results showed that our proposed methodology performed better than any of the other four methods. As far as we know, this is the first time that this kind of approach has been applied in the metabolomics context.
+              </blockquote></p>
+            </li>
+          </ul>
+          
+          <p>
+          Two works, the conference proceeding and the patent proposal,
+          are results of collaboration in development of an algorithm 
+          for joint clustering, where the data samples come from different views or representation.
+          One of the steps of the algorithm is joint diagonalization of several matrices,
+          which in turn was implemented in the course of the thesis
+          (R package cpca).
+          </p>
+          
+          <ul>
+            <li>Kanaan-Izquierdo, S., <b>Ziyatdinov, A.</b>, Massanet, R., & Perera, A. (2012). 
+            Multiview approach to spectral clustering. 
+            In 2012 Annual International Conference of the IEEE Engineering in Medicine and Biology Society 
+            (pp. 1254–1257). IEEE. doi:10.1109/EMBC.2012.6346165
+            </li>
+            <li>
+              Kanaan-Izquierdo, S., <b>Ziyatdinov, A.</b>, Massanet, R., & Perera, A. (2013). 
+              Patent Proposal: A computer spectral clustering improved method and uses thereof. 
+              Spain: Oficina Española de Patentes y Marcas.
+            </li>
+          </ul>
+        </section>
+
+        <section id="post">
+  				<div class="page-header">
+            <h3>Post-thesis</h3>
+          </div>
+
+          <ul>
+            <li>
+            <b>Ziyatdinov, A.</b>, Fonollosa, J., Fernández, L., Gutierrez-Gálvez, A., Marco, S., & Perera, A. (2015). 
+            Bioinspired early detection through gas flow modulation in chemo-sensory systems. 
+            <i>Sensors and Actuators B: Chemical</i>, 
+            206(0), 538–547. doi:http://dx.doi.org/10.1016/j.snb.2014.09.001
+            [<a href="http://www.sciencedirect.com/science/article/pii/S0925400514010703">link</a>]
+            
+              <p><blockquote>
+Abstract: The design of bioinspired systems for chemical sensing is an engaging line of research in machine olfaction. Developments in this line could increase the lifetime and sensitivity of artificial chemo-sensory systems. Such approach is based on the sensory systems known in live organisms, and the resulting developed artificial systems are targeted to reproduce the biological mechanisms to some extent. Sniffing behaviour, sampling odours actively, has been studied recently in neuroscience, and it has been suggested that the respiration frequency is an important parameter of the olfactory system, since the odour perception, especially in complex scenarios such as novel odourants exploration, depends on both the stimulus identity and the sampling method. In this work we propose a chemical sensing system based on an array of 16 metal-oxide gas sensors that we combined with an external mechanical ventilator to simulate the biological respiration cycle. The tested gas classes formed a relatively broad combination of two analytes, acetone and ethanol, in binary mixtures. Two sets of low-frequency and high-frequency features were extracted from the acquired signals to show that the high-frequency features contain information related to the gas class. In addition, such information is available at early stages of the measurement, which could make the technique suitable in early detection scenarios. The full data set is made publicly available to the community (<a href="http://archive.ics.uci.edu/ml/datasets/Gas+sensor+array+under+flow+modulation">link</a>).
+              </blockquote></p>
+                          
+            </li>
+          </ul>
+        <section>  
+            
+
 
         <section id="datasets">
   				<div class="page-header">
