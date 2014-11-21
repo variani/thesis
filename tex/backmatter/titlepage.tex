@@ -1,0 +1,45 @@
+%*******************************************************
+% Titlepage
+%*******************************************************
+\begin{titlepage}
+
+  \pdfbookmark[1]{Title}{title}
+  
+	% if you want the titlepage to be centered, uncomment and fine-tune the line below (KOMA classes environment)
+	\begin{addmargin}[-1cm]{-3cm}
+    \begin{center}
+        \large  
+
+        \hfill
+
+        \vfill
+        
+        \spacedlowsmallcaps{Doctoral Thesis in \myProgram} \\
+        \begingroup
+            %\color{Maroon}\spacedallcaps{\myTitle} \\ \bigskip
+            \color{Maroon}\spacedallcaps{\myTitleOne} \\
+            \color{Maroon}\spacedallcaps{\myTitleTwo} \\  
+            \bigskip
+        \endgroup
+
+        \spacedlowsmallcaps{Aspirant: \myName} \\
+        \spacedlowsmallcaps{Adviser: \myProf} \\
+        %\spacedlowsmallcaps{Program: \myProgram} \\
+        
+        \vfill
+
+        \includegraphics[width=3cm]{../images/upc_logo.jpg} \\ \medskip
+
+        %\myDegree \\ \medskip   
+        \myDepartment \\                            
+        %\myFaculty \\
+        \myUni \\ \bigskip
+        
+        \href{http://variani.github.io/thesis}{http://variani.github.io/thesis} \\
+        \myTime
+
+        \vfill                      
+
+    \end{center}  
+  \end{addmargin}       
+\end{titlepage}   
