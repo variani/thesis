@@ -1,0 +1,143 @@
+%%% Header #1
+%\documentclass{beamer}
+%\usepackage{beamerthemebars}
+%%%\usetheme{Malmoe} % Malmoe, Luebeck, Berkeley
+%\usetheme{upcisoen}
+
+%%% Header #2
+%\documentclass[serif,mathserif]{beamer}
+%\usepackage[utf8]{inputenc}
+%\usepackage{amsmath, amsfonts, epsfig, xspace}
+%%%\usepackage{algorithm,algorithmic}
+%\usepackage{pstricks,pst-node}
+%\usepackage{multimedia}
+%\usepackage[normal,tight,center]{subfigure}
+%\usepackage{fancybox}
+
+%\setlength{\subfigcapskip}{-.5em}
+%\usepackage{beamerthemesplit}
+%\usetheme{lankton-keynote}
+
+%%% Header #3
+\documentclass{beamer}
+
+\useoutertheme{wuerzburg}
+\useinnertheme[outline]{chamfered}
+\usecolortheme{shark}
+
+%\useoutertheme[glossy]{wuerzburg}
+%\useinnertheme[outline,shadow]{chamfered}
+%\usecolortheme{shark}
+
+%%%%
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb,amsmath}
+
+% SWEAVE
+\usepackage{Sweave}
+\SweaveOpts{echo=false,results=hide} % \SweaveOpts{echo=TRUE,results=verbatim,width=6,height=4}
+\SweaveOpts{engine=R,eval=TRUE,eps=FALSE,pdf=TRUE,strip.white=true}
+% @ http://biosun1.harvard.edu%2Fcourses%2Findividual%2Fbio271%2Flectures%2FL7%2FSweave-manual-20021007.pdf
+\DefineVerbatimEnvironment{Sinput}{Verbatim} {xleftmargin=0.5em}
+\DefineVerbatimEnvironment{Soutput}{Verbatim}{xleftmargin=0.5em}
+\DefineVerbatimEnvironment{Scode}{Verbatim}{xleftmargin=0.5em}
+\fvset{listparameters={\setlength{\topsep}{0pt}}}
+\renewenvironment{Schunk}{\vspace{\topsep}}{\vspace{\topsep}}
+\SweaveOpts{keep.source=TRUE} % Avoiding comment loss and code reformatting
+
+% PRESENTATION LANGUAGE
+\usepackage[spanish]{babel}
+
+% BIB
+\usepackage{natbib}  
+\def\newblock{}
+
+% http://en.wikibooks.org/wiki/LaTeX/Hyperlinks
+% http://www.math.uakron.edu/~dpstory/tutorial/pdfmarks/hyper.pdf
+%\usepackage{hyperref} 
+
+% DEFINITION OF UPC BLUE
+\definecolor{upcblue}{rgb}{0.262745098,0.556862745,0.77254902}
+\definecolor{MyBrickRed}{rgb}{0.549, 0.239, 0.271}    
+\definecolor{MyStrongRed}{rgb}{0.60, 0, 0.06}    
+
+%\hypersetup{colorlinks, urlcolor=MyBrickRed}  % BrickRed, RoyalBlue
+
+% BASIC SCHEMES
+%\usecolortheme[named=upcblue]{structure}
+%\useinnertheme{rounded}
+%\useoutertheme{shadow}
+
+% SOME MINOR COLOR CHANGES
+%\setbeamercolor{palette primary}{fg=upcblue,bg=white}
+%\setbeamercolor{palette quaternary}{fg=white,bg=upcblue}
+
+%% NEW COMMANDS
+\newcommand{\UPC}{Universitat Polit\`ecnica de Catalunya}
+\newcommand{\R}{\textcolor{MyStrongRed}{\texttt{R}} }
+
+\newcommand{\smaller}{\tiny}
+
+\newcommand{\vvspace}{\vspace{\baselineskip} \\}
+\newcommand{\vvvspace}{$ $ \vspace{\baselineskip} \\}
+
+\newcommand{\empha}[1]{{\textbf{#1}}}
+
+
+% GRAPHICS OPTIONS
+\graphicspath{{figures/}{images/}}
+
+% THE BASIC PRESENTATION INFORMATION
+\title[]{Biomimetic set up for chemosensor-based machine olfaction}
+
+\author[\textnormal{\href{mailto:andrey.ziyatdinov@upc.edu}{andrey.ziyatdinov@upc.edu}}]
+{Andrey Ziyatdinov}
+
+\date[]{4 December, 2014}
+
+\begin{document}
+
+% GRAPHICS OPTIONS
+\setkeys{Gin}{width=1.0\textwidth}
+
+% THE TITLE FRAME
+\begin{frame}[plain]
+  % THE REST OF THE TITLE
+  \maketitle
+\end{frame}
+
+%% frame
+\begin{frame}
+  \frametitle{Outline}
+  \tableofcontents
+\end{frame}
+
+%%%%%%%%%%
+%% SECTION
+\section{Introduction}
+
+%% frame
+\begin{frame}
+\frametitle{Motivation: handle multi-view data}
+
+Data come from multiple views. 
+\begin{itemize}
+  \item Views represent the same samples.
+  \item (here) Data relations are formalized via similarity matrices $S_i$.
+\end{itemize}
+
+%\begin{center} 
+%  \includegraphics[width=0.5\textwidth]{figure/data-views.pdf} 
+%\end{center}
+
+Examples.
+\begin{description}
+  \item [Machine vision:] a scene captured from different view angles. 
+    %different features extracted from the same raw data. % e.g. handwritten digits., Amsterdam Library of .
+  \item [Natural language processing:] a corpus available in multiple languages.
+  \item [Bioinformatics:] biological networks and gene expression data.
+\end{description}
+
+\end{frame}
+
+\end{document}
