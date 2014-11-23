@@ -17,6 +17,7 @@ On the topic [Testing your site locally](http://kbroman.github.io/simple_site/pa
 
 ### Toggling button
 
+* http://stackoverflow.com/a/11968675
 * http://stackoverflow.com/a/25451085
   * demo: http://jsfiddle.net/maybolles/opbyvbv4/2/
 
