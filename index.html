@@ -109,12 +109,161 @@ I judge people on how they smell, not how they look.
 
         <section id="wordcloud">
   				<div class="page-header">
-            <h2>Word Cloud</h2>
+            <h2>Thesis word cloud</h2>
 				  </div>
           
           <img src="images/thesis-wordcloud.png" class="img-responsive" alt="Thesis word cloud">
         </section>
+  
+        <section id="abstract">
+  				<div class="page-header">
+            <h2>Thesis abstract</h2>
+				  </div>
+<p>
+The thesis falls into the field of bioengineering 
+and more particularly into experimental set up for chemical gas sensing.
+Perhaps more than any other sensory modality,
+chemical sensing faces with major technical and conceptual challenges:
+low specificity, slow response time, long term instability,
+power consumption, portability, coding capacity and robustness.
+</p>
 
+<p>
+There is an important trend of the last decade pushing artificial olfaction to 
+mimic the biological olfaction system of insects and mammalians.
+The designers of machine olfaction devices take inspiration
+from the biological olfactory system,
+because animals effortlessly accomplish some of the unsolved scenarios in machine olfaction.
+In a remarkable example of an olfactory guided behavior,
+male moths navigate over large distances in order to locate calling females
+by detecting pheromone signals both rapidly and robustly.
+</p>
+
+<p>
+The biomimetic chemical sensing aims to 
+identify the key blocks in the olfactory pathways
+at all levels from the olfactory receptors to the central nervous system,
+and simulate to some extent the operation of these blocks,
+that would allow to approach the sensing performance known 
+in biological olfactory system of animals.
+New technical requirements
+arise to the hardware and software equipment used in such machine olfaction experiments. 
+</p>
+
+<p>
+This work explores the bioinspired approach to machine olfaction in depth on the technological side.
+At the hardware level, an embedded computer is assembled,
+being the core part of the experimental set up.
+The embedded computer is interfaced with two main biomimetic modules designed by the collaborators:
+a large-scale sensor array for emulation of the population of the olfactory receptors,
+and a mobile robotic platform for autonomous experiments for guiding olfactory behavior.
+At the software level, the software development kit is designed
+to host the neuromorphic models of the collaborators for processing the sensory inputs as in the olfactory pathway.
+</p>
+
+<p>
+Virtualization of the  set up was one of the key engineering solutions in its development. 
+Being a device, the set up is transformed to a virtual system for running data simulations,
+where the software environment is essentially the same,
+and the real sensors are replaced by the virtual sensors 
+coming from especially designed data simulation tool.
+The proposed abstraction of the set up results in
+an ecosystem containing both 
+the virtual array for data generation
+and the models of the olfactory system for data processing.
+This ecosystem can be loaded from the developed system image on any personal computer.
+</p>
+
+<p>
+The scientific results have been published in three journal articles, two book chapters  
+and conference proceedings.
+The main results on validation of the set up 
+under the scenario of robotic odor localization 
+are reported in the book chapters.
+The series of three journal articles covers the work on the data simulation tool for machine olfaction: 
+the novel model of drift, 
+the models to simulate the sensor array data based on the reference data set,
+and the parametrized simulated data and benchmarks proposed for the first time in machine olfaction.
+</p>
+
+<p>
+This thesis ends up with a solid foundation for the research in biomimetic simulations and algorithms on machine olfaction.
+The results achieved in the thesis are expected 
+to give rise to new bioinspired applications in machine olfaction,
+which could 
+have a significant impact in the biomedical engineering research area.
+</p>
+        </section>
+   
+        <section id="defense">
+  				<div class="page-header">
+            <h2>Thesis defense ceremony</h2>
+				  </div>
+          
+          <p>
+          On Thursday 4 December 2014 at 12:00, the doctoral thesis defense ceremony
+          will take place in <i>Sala d'Actes</i>,
+          Facultat de Matemàtiques i Estadística,
+          Universitat Politècnica de Catalunya.
+          Pau Gargallo 5, 08028 Barcelona.
+          <p>
+          
+          <p>
+            <div id="map_canvas" style="width: 100%; height: 300px;"></div>
+          </p>
+          
+<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+
+<script type="text/javascript">
+var settingsItemsMap = {
+    zoom: 16,
+    center: new google.maps.LatLng(41.383515, 2.115768),
+    zoomControlOptions: {
+      style: google.maps.ZoomControlStyle.LARGE
+    },
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+};
+var map = new google.maps.Map(document.getElementById('map_canvas'), settingsItemsMap );
+
+
+var contentString = '<div id="mapInfo">' +
+  'Facultat de Matemàtiques i Estadística<br>' +
+  'Universitat Politècnica de Catalunya<br>' +
+  'Pau Gargallo 5, 08028 Barcelona<br>'+
+  '</div>';
+            
+var infowindow = new google.maps.InfoWindow({
+  content: contentString
+});
+
+var myMarker = new google.maps.Marker({
+    position: new google.maps.LatLng(41.383515, 2.115768)
+});
+
+google.maps.event.addListener(myMarker, 'click', function() {
+  infowindow.open(map, myMarker);
+});
+infowindow.open(map, myMarker);
+
+map.setCenter(myMarker.position);
+myMarker.setMap(map);
+</script>
+
+<p>
+<a href="https://goo.gl/maps/GY8vV">Open</a> to Google Maps.
+<p>
+
+        </section>
+
+        <section id="download">
+  				<div class="page-header">
+            <h2>Download thesis</h2>
+          </div>  
+            <p>
+            The thesis manuscript will be available at <a href="http://www.tdx.cat/">www.tdx.cat</a> soon.
+            </p>
+        </section>
+                     
         <section id="pubs">
   				<div class="page-header">
             <h2>Publications</h2>
@@ -466,7 +615,7 @@ Abstract: The design of bioinspired systems for chemical sensing is an engaging 
 
 	<script src="jquery/jquery-1.10.1.min.js"></script>
 	<script src="bootstrap/js/bootstrap.min.js"></script>
-	<script src="user.js"></script>
+	<script src="user.js">
 
 </body>
 </html>
