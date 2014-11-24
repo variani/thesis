@@ -1,0 +1,29 @@
+
+/* Styles for Title Slide */
+
+.title-slide {
+  background-color: #99CC99; /* #CBE7A5 #EDE0CF; ; #CA9F9D
+    #99CC99  */
+  /* background-image:url(http://goo.gl/EpXln); */
+}
+
+.title-slide hgroup > h1{
+ font-family: 'Oswald', 'Helvetica', sanserif; 
+}
+
+.title-slide hgroup > h1, 
+.title-slide hgroup > h2 {
+  color: #535E43;  /* ; #535E43 #EF5150*/
+}
+
+/* Class fill */
+slide.fill {
+  background-repeat: no-repeat;
+  @include border-radius($slide-border-radius);
+  @include background-size(cover);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+
