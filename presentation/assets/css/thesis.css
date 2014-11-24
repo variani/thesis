@@ -1,19 +1,26 @@
+/* Basics */
+
 
 /* Styles for Title Slide */
 
 .title-slide {
-  background-color: #99CC99; /* #CBE7A5 #EDE0CF; ; #CA9F9D
-    #99CC99  */
+  background-color: #FFF; /* #CBE7A5 #EDE0CF; ; #CA9F9D
+    #99CC99 */
   /* background-image:url(http://goo.gl/EpXln); */
 }
 
 .title-slide hgroup > h1{
- font-family: 'Oswald', 'Helvetica', sanserif; 
+  font-family: 'Oswald', 'Helvetica', sanserif; 
 }
 
 .title-slide hgroup > h1, 
 .title-slide hgroup > h2 {
-  color: #535E43;  /* ; #535E43 #EF5150*/
+  color: #515151;  /* ; #535E43 #EF5150
+     */
+}
+
+.title-slide hgroup > p {
+  color: #515151;
 }
 
 /* Class fill */

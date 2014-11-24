@@ -3,6 +3,7 @@ title       : Biomimetic set up for chemosensor-based machine olfaction
 title1      : Biomimetic set up for
 title2      : chemosensor-based
 title3      : machine olfaction
+title23     : chemosensor-based machine olfaction
 subtitle    : PhD thesis defense presentation
 author      : Andrey Ziyatdinov
 aspirant    : Andrey Ziyatdinov
@@ -17,7 +18,6 @@ widgets     : mathjax          # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
 ---
 
-<link rel="stylesheet" href="assets/css/thesis.css">
 
 
 
@@ -26,9 +26,11 @@ mode        : selfcontained # {standalone, draft}
 
 ## About this presentation
 
+blabla
+
 --- .segue .quote bg:#99CC99
 
-## Results
+## Testing slides
 
 --- .fill bg:url(images/sand.jpg) no-repeat
 

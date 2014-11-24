@@ -21,3 +21,5 @@ CSS:
    * http://stackoverflow.com/questions/20875593/how-to-control-the-background-color-of-the-first-slidify-slide
 * background image
    * https://github.com/ramnathv/slidify/issues/82
+* custom css file
+  * https://github.com/ramnathv/slidify/issues/230#issuecomment-19698975 
