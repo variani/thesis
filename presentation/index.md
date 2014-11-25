@@ -22,8 +22,6 @@ mode        : selfcontained # {standalone, draft}
 
 
 
-
-
 ## About this presentation
 
 blabla
