@@ -1,0 +1,68 @@
+\DeclareOptionBeamer{compress}{\beamer@compresstrue}
+\ProcessOptionsBeamer
+
+\mode<presentation>
+
+%% keynote scheme
+\usepackage{hyperref}
+\usepackage{color}
+\usepackage{texnansi}
+\usepackage{marvosym}
+
+\renewcommand\sfdefault{phv}
+\renewcommand\familydefault{\sfdefault}
+
+\usetheme{Frankfurt} % default, Dresden, Frankfurt
+\useoutertheme{default}
+
+\usecolortheme{default} % dolphin, rose
+\usefonttheme{serif}
+
+\definecolor{def.fg}{rgb}{0.2,0.2,0.7}
+\definecolor{def.bg}{rgb}{1,1,1}
+\definecolor{def.example}{rgb}{0.14, 0.65, 0.71}
+
+%\definecolor{bottomcolour}{rgb}{0.32,0.3,0.38}
+%\definecolor{middlecolour}{rgb}{0.08,0.08,0.16}
+
+\setbeamertemplate{navigation symbols}{} %no nav symbols
+%\setbeamertemplate{background canvas}[vertical shading]
+
+\setbeamercolor{frametitle}{fg=def.bg, bg=def.fg}
+\setbeamercolor{palette primary}{fg=def.fg, bg=def.bg}
+\setbeamercolor{palette secondary}{fg=def.fg, bg=def.bg}
+\setbeamercolor{palette tertiary}{fg=def.fg, bg=def.bg}
+\setbeamercolor{palette quaternary}{fg=def.fg, bg=def.bg}
+%\setbeamercolor{normal text}{bg=black, fg=white}
+
+\setbeamerfont{title}{size=\Huge}
+\setbeamerfont{frametitle}{size=\huge}
+
+\setbeamertemplate{frametitle}[default]%[center]
+%\setbeamertemplate{background canvas}[vertical shading]
+%[bottom=bottomcolour, middle=middlecolour, top=black]
+\setbeamertemplate{navigation symbols}{} %no nav symbols
+
+% toc bullets
+\setbeamertemplate{sections/subsections in toc}[square]
+
+% bullets
+\setbeamertemplate{itemize item}[triangle]
+\setbeamertemplate{itemize subitem}{$\rhd$}
+\setbeamertemplate{enumerate items}[square]
+
+% blocks
+\setbeamercolor{block title}{use=structure, fg=def.fg, bg=def.fg!20!def.bg}
+\setbeamercolor{block body}{parent=normal text,use=block title, bg=block title.bg!70!def.bg}
+
+\setbeamercolor{block title example}{use=example text, fg=def.example, bg=def.example!20!def.bg}
+\setbeamercolor{block body example}{parent=normal text, use=block title example, bg=block title example.bg!50!def.bg}
+
+\setbeamercolor{block title alerted}{use=example text,fg=example text.fg,bg=example text.fg!20!bg}
+\setbeamercolor{block body alerted}{parent=normal text,use=block title example,bg=block title example.bg!50!bg}
+
+\mode
+<all>
+
+% References
+% \usepackage{hyperref} @ http://en.wikibooks.org/wiki/LaTeX/Hyperlinks
