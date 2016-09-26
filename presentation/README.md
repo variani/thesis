@@ -1,3 +1,15 @@
+## Slides
+
+Dogs Excel on Smell Test to Find Cancer
+
+* NYT article: http://www.nytimes.com/2006/01/17/health/17dog.html?_r=0
+* Journal article: Diagnostic accuracy of canine scent detection in early-and late-stage lung and breast cancers
+    * http://scholar.google.es/scholar?cites=13368662629796640276&as_sdt=2005&sciodt=0,5&hl=en
+* Diagnosis of lung cancer by the analysis of exhaled breath with a colorimetric sensor array
+    * http://scholar.google.es/scholar?cites=12208152050686180914&as_sdt=2005&sciodt=0,5&hl=en
+    
+
+
 ## Hooks
 
 * For custmomization of the title page, 
